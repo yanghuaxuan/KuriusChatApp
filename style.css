@@ -29,8 +29,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background: rgb(122,34,195);
-  background-image: linear-gradient(256deg, rgba(122,34,195,1) 24%, rgba(45,253,184,1) 100%);
+  background-color: #060622;
 }
 
 .main-container {
@@ -39,9 +38,11 @@ body {
 }
 
 .sidenav {
-  background-color: gray;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  color: rgb(226, 226, 226);
   width: 5ch;
-  border-radius: 20px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .sidenav-icon {
@@ -49,6 +50,6 @@ body {
 }
 
 .content {
-  
+  background-color: red;
 }
 
