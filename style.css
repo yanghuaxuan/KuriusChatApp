@@ -89,16 +89,19 @@ body {
   font-weight: 300;
 }
 
-#contacts {
-  color: #C9D1D9;
-}
 
 #contacts-name {
   font-size: 1.5ch;
+  color: #C9D1D9;
   margin: 0px;
   padding: 10px 0px 10px 5px; 
   border-width: 1px;
   border-top-style: solid;
   border-bottom-style: solid;
   border-color: #21262D;
+}
+
+#contacts-name:hover {
+  background-color: gray;
+  cursor: pointer;
 }
