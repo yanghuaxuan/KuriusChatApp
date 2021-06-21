@@ -34,7 +34,7 @@ body {
 
 .main-container {
   display: flex;
-  height: 90vh;
+  height: 95vh;
   justify-content: flex-start;
 }
 
@@ -69,7 +69,7 @@ body {
 }
 
 .menu-header {
-  margin-top: 0px;
+  margin: 0px;
   padding-bottom:24px;
   font-size: 24px;
   text-align: center;
@@ -87,4 +87,18 @@ body {
   color: #C9D1D9;
   border-top-right-radius: 15px;
   font-weight: 300;
+}
+
+#contacts {
+  color: #C9D1D9;
+}
+
+#contacts-name {
+  font-size: 2ch;
+  margin: 0px;
+  padding: 10px 0px 10px 0px; 
+  border-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: #21262D;
 }
