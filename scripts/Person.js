@@ -8,7 +8,7 @@ export class Person {
     this.name = name;
   }
 
-  get name() {
+  get getName() {
     return this.name;
   }
   
