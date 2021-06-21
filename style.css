@@ -48,7 +48,7 @@ body {
   border-bottom-left-radius: 15px;
 }
 
-.menu {
+#menu {
   flex: 0 0 20%;
   background-color: #0D1117;
   border-right-style: solid;
@@ -68,7 +68,7 @@ body {
   margin-top: 5px;
 }
 
-.menu-header {
+#menu-header {
   margin: 0px;
   padding-bottom:24px;
   font-size: 24px;
