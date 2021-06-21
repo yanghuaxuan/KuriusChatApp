@@ -56,7 +56,7 @@ body {
   border-color: #21262D;
 }
 
-.chat {
+#chat {
   flex: 1 0 auto;
   background-color: #0D1117;
   border-top-right-radius: 15px;
@@ -78,7 +78,7 @@ body {
   font-weight: bold;
 }
 
-.chat-header {
+#chat-header {
   margin-top: 0px;
   padding-bottom: 25px;
   text-align: center;
@@ -100,7 +100,7 @@ body {
   border-color: #21262D;
 }
 
-.contacts:hover {
+.contacts:hover, .active{
   background-color: gray;
   cursor: pointer;
 }
