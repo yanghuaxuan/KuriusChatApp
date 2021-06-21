@@ -1,4 +1,6 @@
-window.onload = () => {
+import {Person} from './Person.js'
+
+export function main() {
   let exampleContacts = ["Joe Mama", "Boss", "Chad"];
   exampleContacts.forEach((value) => {
     // Create name for each contact
@@ -10,3 +12,4 @@ window.onload = () => {
     contactsElement.appendChild(element);
   })
 }
+
