@@ -11,6 +11,10 @@ export class Person {
   get getName() {
     return this.name;
   }
+
+  get getMessages() {
+    return this.messages;
+  }
   
   addMessage(message) {
     this.messages.push(message);
