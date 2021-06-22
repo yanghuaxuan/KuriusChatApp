@@ -9,8 +9,11 @@ export function main() {
   const Boss = new Person("Boss");
   let exampleContacts = new Map();
   exampleContacts.set("Joe Mama", JoeMama);
+  JoeMama.generateRandomMessages();
   exampleContacts.set("Bob the Builder", Bob);
+  Bob.generateRandomMessages();
   exampleContacts.set("Boss", Boss);
+  Boss.generateRandomMessages();
   createContacts(exampleContacts);
   createChat(exampleContacts);
 }
