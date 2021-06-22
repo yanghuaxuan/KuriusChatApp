@@ -27,7 +27,7 @@ export class Person {
       return totalMessage;
     }
     for(let i = 0; i < 6; i++) {
-      this.messages.push(randomMessage());
+      this.messages.push(this.name + ": " + randomMessage());
     }
   }
 

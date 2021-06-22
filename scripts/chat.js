@@ -5,7 +5,6 @@ export function createChat(contacts) {
 // Trying event delegation
 let attachContactsListener = function(contacts) {
   let contacts_container = document.getElementById("contacts-container");
-
   contacts_container.onclick = function(event) {
     let target = event.target;
     changeChat(target, contacts);
@@ -28,6 +27,10 @@ let changeChatBox = function(target, contacts) {
   let currentPerson = contacts.get(target.id);
   let messages = currentPerson.getMessages;
   messages.forEach((message) => {
-    console.log(message);
+    let chatBubble = document.createElement("p");
+    chatBubble.id = "chat-bubble";
+    let messageNode = document.createTextNode(message);
+    chatBubble.appendChild(messageNode);
+    chatBox.appendChild(chatBubble);
   })
 }
