@@ -27,6 +27,7 @@ let changeChatBox = function(target, contacts) {
   let chatBox = document.getElementById("chat-box");
   let currentPerson = contacts.get(target.id);
   let messages = currentPerson.getMessages;
-  console.log(currentPerson.getName);
-  console.log(messages);
+  messages.forEach((message) => {
+    console.log(message);
+  })
 }

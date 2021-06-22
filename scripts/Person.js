@@ -18,13 +18,16 @@ export class Person {
   }
   
   generateRandomMessages() {
-    let totalMessage = "";
     let randomMessages = ["Hello", "I", "am", "a", "person", "and", "alien"];
-    for(let i = 0; i < 6; i++) {
-      totalMessage += (randomMessages[Math.floor(Math.random() * randomMessages.length)] + " ");
+    let randomMessage = function() {
+      let totalMessage = ""
+      for(let i = 0; i < 6; i++) {
+        totalMessage += (randomMessages[Math.floor(Math.random() * randomMessages.length)] + " ");
+      }
+      return totalMessage;
     }
     for(let i = 0; i < 6; i++) {
-      this.messages.push(totalMessage);
+      this.messages.push(randomMessage());
     }
   }
 
