@@ -24,6 +24,11 @@ let changeChatHeader = function(target) {
 
 let changeChatBox = function(target, contacts) {
   let chatBox = document.getElementById("chat-box");
+  if(chatBox.hasChildNodes()) {
+    while(chatBox.firstChild) {
+      chatBox.removeChild(chatBox.firstChild);
+    }
+  }
   let currentPerson = contacts.get(target.id);
   let messages = currentPerson.getMessages;
   messages.forEach((message) => {
