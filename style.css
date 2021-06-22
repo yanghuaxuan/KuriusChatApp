@@ -107,5 +107,9 @@ body {
 }
 
 #chat-bubble {
-  color: white;
+  color: #C9D1D9;  
+  background: rgb(31,57,190);
+  background: radial-gradient(circle, rgba(31,57,190,1) 0%, rgba(96,76,139,1) 100%);
+  border-radius: 5px;
+  padding: 2vh 5px 2vh 5px;
 }
