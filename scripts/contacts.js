@@ -1,14 +1,14 @@
 import {Person} from './Person.js';
 
 export function createContacts(contacts) {
-  contacts.forEach((contact) => {
+  contacts.forEach((person, name) => {
   // Create name for each contact
   let contactsElement = document.getElementById("contacts-container");
   let element = document.createElement("h5");
   element.className += "contacts";
-  element.id = contact.getName;
+  element.id = name;
   element.addEventListener("click", addActive);
-  let contactName = document.createTextNode(contact.getName);
+  let contactName = document.createTextNode(name);
   element.appendChild(contactName);
   contactsElement.appendChild(element);
   })

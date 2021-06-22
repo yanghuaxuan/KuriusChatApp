@@ -1,4 +1,4 @@
-export function createChatBox(contacts) {
+export function createChat(contacts) {
   attachContactsListener();
 } 
 
@@ -10,6 +10,11 @@ let attachContactsListener = function() {
     let target = event.target;
     changeChatHeader(target);
   }
+}
+
+let changeChatBox = function() {
+  let chatBox = document.getElementById("chat-box");
+  
 }
 
 let changeChatHeader = function(target) {
