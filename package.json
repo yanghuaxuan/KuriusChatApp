@@ -2,7 +2,7 @@
   "name": "KuriusChatApp",
   "version": "1.0.0",
   "description": "**View and run code [here](https://KuriusChatApp-1.3gigs.repl.co)**",
-  "main": "index.js",
+  "main": "./app/express.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
