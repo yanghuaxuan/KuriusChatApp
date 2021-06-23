@@ -32,18 +32,10 @@ let changeChatBox = function (target, contacts) {
   let currentPerson = contacts.get(target.id);
   let messages = currentPerson.getMessages;
   messages.forEach((message) => {
-    let chatBubble = document.createElement("div");
-    chatBubble.id = "chat-bubble";
-    let messageAuthor = document.createElement("h3");
-    messageAuthor.id = "chat-bubble-author"
     let messageText = document.createElement("p");
-    messageText.id = "chat-bubble-text"
-    let authorNode = document.createTextNode(currentPerson.getName);
+    messageText.id = "chat-bubble"
     let messageNode = document.createTextNode(message);
-    messageAuthor.appendChild(authorNode);
     messageText.appendChild(messageNode);
-    chatBubble.appendChild(messageAuthor);
-    chatBubble.appendChild(messageText);
-    chatBox.appendChild(chatBubble);
+    chatBox.appendChild(messageText);
   })
 }
