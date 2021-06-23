@@ -13,5 +13,5 @@ I hate CSS
 2. Install depedencies using  
 ```npm install```
 3. Run server using  
-```npm .```
+```node .```
  
