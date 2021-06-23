@@ -79,7 +79,7 @@ body {
 
 #menu-header {
   margin: 0px;
-  padding-bottom:24px;
+  padding: 5px 0px 20px 0px;
   font-size: 24px;
   text-align: center;
   color: #C9D1D9;
@@ -88,8 +88,8 @@ body {
 }
 
 #chat-header {
-  margin-top: 0px;
-  padding-bottom: 25px;
+  margin: 0px;
+  padding: 5px 0px 20px 0px;
   text-align: center;
   background-color: #090C10;
   font-size: 24px;
@@ -122,4 +122,10 @@ body {
   margin: 4vh 0px 4vh 5px;
   padding: 2vh 0px 2vh 5px;
   width: 30vw;
+}
+
+#chat-write {
+  color: #21262D;
+  border-top: solid;
+  border-color: #21262D;
 }
