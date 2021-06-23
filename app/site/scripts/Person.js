@@ -26,7 +26,7 @@ export class Person {
       }
       return totalMessage;
     }
-    for(let i = 0; i < 6; i++) {
+    for(let i = 0; i < 100; i++) {
       this.messages.push(this.name + ": " + randomMessage());
     }
   }

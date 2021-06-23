@@ -64,6 +64,9 @@ body {
 }
 
 #chat-box {
+  display: flex;
+  flex-direction: column;
+  height:70vh;
   overflow: auto;
 }
 
@@ -115,16 +118,16 @@ body {
   background-color: #223ABC;
   border-radius: 5px;
   margin: 5vh 0px 5vh 5px;
-  width: 40vw;
+  width: 30vw;
 }
 
 #chat-bubble-author {
-  color: red;
-  margin: 0px;
+  color: white;
+  margin: 0px 0px 0px 5px;
 }
 
 #chat-bubble-text {
-  color: orange; 
+  color: white; 
   margin: 0px;
-  padding: 5px 0px 5px 5px;
+  padding: 10px 0px 5px 10px;
 }
