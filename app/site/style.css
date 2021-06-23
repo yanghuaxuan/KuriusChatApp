@@ -125,7 +125,10 @@ body {
 }
 
 #chat-write {
-  color: #21262D;
-  border-top: solid;
-  border-color: #21262D;
+  background-color: #21262D;
+  color: #C9D1D9;
+  border-width: 0px;
+  border-bottom-right-radius: 5px;
+  width: 95.5%;
+  padding: 20px;
 }

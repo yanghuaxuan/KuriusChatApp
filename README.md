@@ -5,8 +5,8 @@
 I hate CSS
 
 **To-Do**
-- Make text wrap around chatbox
-- Make chatbubbles prettier
+- Support sending text to a contact
+- Idk make code cleaner somehow
 
 ### A simple webserver is required to run this site
 1. Install node.js

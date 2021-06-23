@@ -20,9 +20,9 @@
       <div id="chat">
         <h1 id="chat-header">Welcome!</h1>
         <div id="chat-box"></div>
-        <div id="chat-write">
-          <p>Write a message</p>
-        </div>
+        <form action="./message_send" method="POST">
+          <input type="text" id="chat-write" placeholder="Write a message">
+        </form>
       </div>
     </div>
     <script type="module">
