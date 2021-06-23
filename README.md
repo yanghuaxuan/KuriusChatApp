@@ -7,3 +7,11 @@ I hate CSS
 **To-Do**
 - Make text wrap around chatbox
 - Make chatbubbles prettier
+
+### A simple webserver is required to run this site
+1. Install node.js
+2. Install depedencies using  
+```npm install```
+3. Run server using  
+```npm .```
+ 
