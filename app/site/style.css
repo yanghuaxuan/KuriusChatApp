@@ -63,6 +63,10 @@ body {
   border-bottom-right-radius: 15px;
 }
 
+#chat-box {
+  overflow: auto;
+}
+
 .sidenav-icon {
   margin-left: 10px;
   margin-top: 5px;
@@ -108,9 +112,19 @@ body {
 
 #chat-bubble {
   color: #C9D1D9;  
-background-color: #223ABC;
+  background-color: #223ABC;
   border-radius: 5px;
-  margin: 10px 0px 10px 5px;
-  padding: 2vh 5px 2vh 5px;
+  margin: 5vh 0px 5vh 5px;
   width: 40vw;
+}
+
+#chat-bubble-author {
+  color: red;
+  margin: 0px;
+}
+
+#chat-bubble-text {
+  color: orange; 
+  margin: 0px;
+  padding: 5px 0px 5px 5px;
 }
