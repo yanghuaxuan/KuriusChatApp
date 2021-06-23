@@ -4,6 +4,6 @@
 
 I hate CSS
 
-** To-Do **
+**To-Do**
 - Make text wrap around chatbox
 - Make chatbubbles prettier
