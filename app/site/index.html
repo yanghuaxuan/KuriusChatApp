@@ -9,18 +9,18 @@
   </head>
   <body>
     <div class="main-container">
-      <div class="sidenav">
-          <span class="material-icons sidenav-icon">menu</span>
+      <div id="sidenav">
+        <span class="material-icons sidenav-icon">menu</span>
+        <span class="material-icons sidenav-icon" id="add-button">add_circle</span>
       </div>
       <div id="menu">
         <h3 id="menu-header">PogChat</h3>
-        <div id="contacts-container">
-        </div>
+        <div id="contacts-container"></div>
       </div>
       <div id="chat">
         <h1 id="chat-header">Welcome!</h1>
         <div id="chat-box"></div>
-        <form action="./message_send" method="POST">
+        <form>
           <input type="text" id="chat-write" placeholder="Write a message">
         </form>
       </div>

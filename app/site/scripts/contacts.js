@@ -1,7 +1,6 @@
-import {Person} from './Person.js';
 
 export function createContacts(contacts) {
-  contacts.forEach((person, name) => {
+  contacts.forEach((Person, name) => {
   // Create name for each contact
   let contactsElement = document.getElementById("contacts-container");
   let element = document.createElement("h5");

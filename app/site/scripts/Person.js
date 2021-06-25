@@ -3,7 +3,8 @@
 export class Person {
   name = "default name";
   messages = [];
-  
+  avatar = "";
+
   constructor(name) {
     this.name = name;
     this.messages;
@@ -32,6 +33,7 @@ export class Person {
   }
 
   addMessage(message) {
-    this.messages.push();
+    this.messages.push(message);
   }
+  
 }
