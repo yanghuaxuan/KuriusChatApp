@@ -1,6 +1,6 @@
 ## Simple app I made for [HackItForward](https://hackitforward.com/challenge/20/#searchModalDialog) challenge  
 
-**View and run code [here](https://KuriusChatApp-1.3gigs.repl.co)**
+**View and run code [here](https://kuriuschatapp.3gigs.repl.co/)**
 
 I hate CSS
 
@@ -13,5 +13,5 @@ I hate CSS
 2. Install depedencies using  
 ```npm install```
 3. Run server using  
-```npm .```
+```node .```
  
