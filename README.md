@@ -5,8 +5,7 @@
 I hate CSS
 
 **To-Do**
-- Support sending text to a contact
-- Idk make code cleaner somehow
+- Display chat
 
 ### A simple webserver is required to run this site
 1. Install node.js
