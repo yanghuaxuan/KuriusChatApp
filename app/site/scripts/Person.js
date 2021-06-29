@@ -10,7 +10,13 @@ export class Person {
         this.messages = []
     }
     addMessage(message) {
-        this.messages.push([message, JSON.stringify(new metaData("Person"))]);
+        this.messages.push([message, 
+                            JSON.stringify(new metaData("Person"))]);
+        return this.messages;
+    }
+    addReply(message) {
+        this.messages.push([message, 
+                            JSON.stringify(new metaData("Recipient"))]);
         return this.messages;
     }
 }
