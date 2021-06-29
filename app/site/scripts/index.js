@@ -2,6 +2,7 @@
 import {Person} from './Person.js';
 import {createContacts} from './contacts.js';
 import {createChat} from './chat.js';
+import {giveIconsFunction} from './icons.js';
 
 export function main() {
   const JoeMama = new Person("Joe Mama");
@@ -16,5 +17,6 @@ export function main() {
   Boss.generateRandomMessages();
   createContacts(exampleContacts);
   createChat(exampleContacts);
+  giveIconsFunction();
 }
 

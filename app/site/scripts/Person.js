@@ -3,7 +3,8 @@
 export class Person {
   name = "default name";
   messages = [];
-  
+  avatar = "";
+
   constructor(name) {
     this.name = name;
     this.messages;
@@ -26,12 +27,13 @@ export class Person {
       }
       return totalMessage;
     }
-    for(let i = 0; i < 6; i++) {
-      this.messages.push(this.name + ": " + randomMessage());
+    for(let i = 0; i < 5; i++) {
+      this.messages.push(randomMessage());
     }
   }
 
   addMessage(message) {
-    this.messages.push();
+    this.messages.push(message);
   }
+  
 }
