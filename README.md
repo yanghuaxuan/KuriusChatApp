@@ -5,7 +5,7 @@
 I hate CSS
 
 **To-Do**
-- Display chat
+- Allow user to send messages
 
 ### A simple webserver is required to run this site
 1. Install node.js
