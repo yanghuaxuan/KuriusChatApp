@@ -20,6 +20,20 @@ let changeChatBox = function(contactName) {
             messageBubble.id = "reply-bubble";
         }
         chatBox.appendChild(messageBubble);
+        // Add timestamps
+        let timestamp = new Date(metadata.timestamp);
+        let elementTimestamp = document.createElement("p");
+        let elementTimeNode = document.createTextNode(timestamp.getHours() + 
+            ':' + timestamp.getMinutes());
+        let elementDatestamp = document.createElement("p");
+        let elementDateNode = document.createTextNode(timestamp.getMonth() +
+            '/' + timestamp.getDay() + '/' + timestamp.getFullYear());
+        elementTimestamp.appendChild(elementTimeNode);
+        elementTimestamp.id = "timestamp";
+        elementDatestamp.appendChild(elementDateNode);
+        elementDatestamp.id = "timestamp";
+        messageBubble.appendChild(elementTimestamp);
+        messageBubble.appendChild(elementDatestamp);
     }
 }
 let changeChatHeader = function(contactName) {

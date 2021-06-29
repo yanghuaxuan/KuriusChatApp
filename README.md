@@ -6,6 +6,8 @@ I hate CSS
 
 **To-Do**
 - Allow user to send messages
+- Receive POST from user
+- Profile pics? (If I have time)
 
 ### A simple webserver is required to run this site
 1. Install node.js

@@ -65,6 +65,7 @@ body {
   flex: 1;
   min-height: 0;
   width: 100%;
+  font-size: 20px;
   background-color: #0D1117;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -132,7 +133,7 @@ body {
   border-radius: 5px;
   margin: 4vh 0px 4vh 5px;
   padding: 2vh 0px 2vh 5px;
-  width: 30vw;
+  width: 20vw;
 }
 
 #reply-bubble {
@@ -142,6 +143,12 @@ body {
   margin: 4vh 5px 4vh auto;
   padding: 2vh 0px 2vh 5px;
   width: 30vw;
+}
+
+#timestamp {
+  margin: 0px;
+  font-size: 10px;
+  text-align: right;
 }
 
 #chat-write {
