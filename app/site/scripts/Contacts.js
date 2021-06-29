@@ -6,8 +6,12 @@ export let createTestContacts = function() {
     let Bob = new Person("Bob");
     let John = new Person("John");
     let fillerContacts = [Bob, John];
-    alert(Bob.addMessage("verypog"));
-    alert(John.addMessage("not pog"));
+    Bob.addMessage("verypog");
+    Bob.addMessage("Hello.")
+    Bob.addMessage("Haha funny")
+    John.addMessage("not pog");
+    John.addMessage("I'm chicken");
+    John.addMessage("cool cool pog");
     for(let i = 0; i < fillerContacts.length; i++) {
         contactStorage.setItem(fillerContacts[i].name, JSON.stringify(fillerContacts[i]));
     }
