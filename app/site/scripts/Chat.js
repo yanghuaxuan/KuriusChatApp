@@ -37,18 +37,23 @@ let changeChatBox = function(contactName) {
     }
 }
 let changeChatHeader = function(contactName) {
-    console.log(contactName);
     let chatHeader = document.getElementById("chat-header");
     let name = document.createElement("p");
     let image = document.createElement("img");
-
+    let avatar = JSON.parse(window
+                            .localStorage
+                            .getItem(contactName.innerHTML))
+                            .avatar;
     if(document.getElementById("chatheader-name")) {
         name = document.getElementById("chatheader-name");
         name.innerHTML = contactName.innerHTML;
     } else {
         name.id = "chatheader-name";
         name.appendChild(document.createTextNode(contactName.innerHTML));
-        chatHeader.appendChild(name)
+        image.id = "chatheader-avatar";
+        image.src = avatar;
+        chatHeader.appendChild(name);
+        chatHeader.appendChild(image);
     }
 }
 export let contactsMenuListener = function() {

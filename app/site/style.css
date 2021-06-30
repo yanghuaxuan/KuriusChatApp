@@ -148,7 +148,7 @@ body {
 }
 
 #timestamp {
-  margin: 0px;
+  margin: 0px 5px 0px 0px;
   font-size: 10px;
   text-align: right;
 }
@@ -173,4 +173,10 @@ body {
 
 #chatheader-name {
   margin: 0px;
+}
+
+#chatheader-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
 }
