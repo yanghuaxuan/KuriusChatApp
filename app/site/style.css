@@ -35,10 +35,13 @@ body {
 .main-container {
   display: flex;
   height: 95vh;
+  width: 99vw;
   justify-content: flex-start;
 }
 
-.sidenav {
+#sidenav {
+  display: flex;
+  flex-direction: column;
   flex: 0 0 50px;
   background: rgb(31,57,190);
   background: radial-gradient(circle, rgba(31,57,190,1) 0%, rgba(96,76,139,1) 100%);
@@ -57,30 +60,48 @@ body {
 }
 
 #chat {
-  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  font-size: 20px;
   background-color: #0D1117;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 
+#chat-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  overflow: auto;
+}
+
 .sidenav-icon {
   margin-left: 10px;
   margin-top: 5px;
+  color: black;
+}
+
+#add-button {
+  margin: auto;
 }
 
 #menu-header {
   margin: 0px;
-  padding-bottom:24px;
+  padding: 5px 0px 20px 0px;
   font-size: 24px;
   text-align: center;
-  color: #C9D1D9;
+  color: white;
   background-color: #090C10;
   font-weight: bold;
 }
 
 #chat-header {
-  margin-top: 0px;
-  padding-bottom: 25px;
+  margin: 0px;
+  padding: 5px 0px 20px 0px;
   text-align: center;
   background-color: #090C10;
   font-size: 24px;
@@ -90,6 +111,8 @@ body {
 }
 
 .contacts {
+  display: flex;
+  flex-direction: row;
   font-size: 1.5ch;
   color: #C9D1D9;
   margin: 0px;
@@ -108,9 +131,52 @@ body {
 
 #chat-bubble {
   color: #C9D1D9;  
-background-color: #223ABC;
+  background-color: #223ABC;
   border-radius: 5px;
-  margin: 10px 0px 10px 5px;
-  padding: 2vh 5px 2vh 5px;
-  width: 40vw;
+  margin: 4vh 0px 4vh 5px;
+  padding: 2vh 0px 2vh 5px;
+  width: 20vw;
+}
+
+#reply-bubble {
+  color: #C9D1D9;  
+  background-color: grey;
+  border-radius: 5px;
+  margin: 4vh 5px 4vh auto;
+  padding: 2vh 0px 2vh 5px;
+  width: 30vw;
+}
+
+#timestamp {
+  margin: 0px 5px 0px 0px;
+  font-size: 10px;
+  text-align: right;
+}
+
+#chat-write {
+  background-color: #21262D;
+  color: #C9D1D9;
+  border-width: 0px;
+  border-bottom-right-radius: 5px;
+  flex: 1;
+  width: 95.5%;
+  min-height: 0;
+  padding: 20px;
+}
+
+#contacts-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  margin-right: 5px;
+}
+
+#chatheader-name {
+  margin: 0px;
+}
+
+#chatheader-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
 }

@@ -1,0 +1,23 @@
+{
+  "name": "KuriusChatApp",
+  "version": "1.0.0",
+  "description": "**View and run code [here](https://KuriusChatApp-1.3gigs.repl.co)**",
+  "main": "./app/express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3Gigs/KuriusChatApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3Gigs/KuriusChatApp/issues"
+  },
+  "homepage": "https://github.com/3Gigs/KuriusChatApp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
