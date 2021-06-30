@@ -39,22 +39,12 @@ body {
   justify-content: flex-start;
 }
 
-#sidenav {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 50px;
-  background: rgb(31,57,190);
-  background: radial-gradient(circle, rgba(31,57,190,1) 0%, rgba(96,76,139,1) 100%);
-  color: #21262D;
-  width: 5ch;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-}
-
 #menu {
   flex: 0 0 20%;
   background-color: #0D1117;
   border-right-style: solid;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   border-width: 1px;
   border-color: #21262D;
 }
@@ -79,12 +69,6 @@ body {
   overflow: auto;
 }
 
-.sidenav-icon {
-  margin-left: 10px;
-  margin-top: 5px;
-  color: black;
-}
-
 #add-button {
   margin: auto;
 }
@@ -95,8 +79,10 @@ body {
   font-size: 24px;
   text-align: center;
   color: white;
-  background-color: #090C10;
+  background: rgb(31,57,190);
+  background: radial-gradient(circle, rgba(31,57,190,1) 0%, rgba(96,76,139,1) 100%);
   font-weight: bold;
+  border-top-left-radius: 15px;
 }
 
 #chat-header {
