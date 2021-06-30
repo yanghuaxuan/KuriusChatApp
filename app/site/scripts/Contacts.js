@@ -31,10 +31,11 @@ export let displayContacts = function() {
         let imageElement = document.createElement("img");
         newContact.className += "contacts";
         imageElement.src = contact.avatar;
+        imageElement.id = "contacts-avatar"
 
+        newContact.appendChild(imageElement);
         newContactMessage.appendChild(messageNode);
         newContact.appendChild(newContactMessage);
-        newContact.appendChild(imageElement);
         contactsContainer.appendChild(newContact);
     }
 }

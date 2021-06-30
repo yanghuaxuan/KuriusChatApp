@@ -111,6 +111,8 @@ body {
 }
 
 .contacts {
+  display: flex;
+  flex-direction: row;
   font-size: 1.5ch;
   color: #C9D1D9;
   margin: 0px;
@@ -160,4 +162,15 @@ body {
   width: 95.5%;
   min-height: 0;
   padding: 20px;
+}
+
+#contacts-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  margin-right: 5px;
+}
+
+#chatheader-name {
+  margin: 0px;
 }

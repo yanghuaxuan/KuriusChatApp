@@ -37,8 +37,19 @@ let changeChatBox = function(contactName) {
     }
 }
 let changeChatHeader = function(contactName) {
+    console.log(contactName);
     let chatHeader = document.getElementById("chat-header");
-    chatHeader.innerHTML = contactName.innerHTML;
+    let name = document.createElement("p");
+    let image = document.createElement("img");
+
+    if(document.getElementById("chatheader-name")) {
+        name = document.getElementById("chatheader-name");
+        name.innerHTML = contactName.innerHTML;
+    } else {
+        name.id = "chatheader-name";
+        name.appendChild(document.createTextNode(contactName.innerHTML));
+        chatHeader.appendChild(name)
+    }
 }
 export let contactsMenuListener = function() {
     let contactsMenu = document.getElementById("contacts-container");
@@ -48,7 +59,7 @@ export let contactsMenuListener = function() {
             target = event.target.parentElement;
         }
         console.log(target.nodeName);
-        changeChatBox(target.firstChild);
-        changeChatHeader(target.firstChild)
+        changeChatBox(target.children[1]);
+        changeChatHeader(target.children[1])
     })
 }

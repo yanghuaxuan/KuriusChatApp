@@ -20,7 +20,7 @@ export class Person {
                             JSON.stringify(new metaData("Recipient"))]);
         return this.messages;
     }
-    addAvatar(link="./resources/defaultprofile.png") {
+    addAvatar(link="../resources/defaultprofile.jpg") {
         this.avatar = link;
     }
 }
