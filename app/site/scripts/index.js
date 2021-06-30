@@ -6,4 +6,3 @@ export let main = function () {
     displayContacts();
     contactsMenuListener();
 }
-
