@@ -10,24 +10,31 @@ export let createTestContacts = function() {
     Bob.addMessage("Hello.");
     Bob.addMessage("Haha funny");
     Bob.addReply("That's so poggers champs moment");
+    Bob.addAvatar()
     John.addMessage("not pog");
     John.addMessage("I'm chicken");
     John.addReply("That's so poggers champs moment");
     John.addMessage("cool cool pog");
+    John.addAvatar();
     for(let i = 0; i < fillerContacts.length; i++) {
         contactStorage.setItem(fillerContacts[i].name, JSON.stringify(fillerContacts[i]));
     }
 }
 
 export let displayContacts = function() {
-    let contactsContainer = document.getElementById("menu");
+    let contactsContainer = document.getElementById("contacts-container");
     for(let i = 0; i < contactStorage.length; i++) {
         let contact = JSON.parse(contactStorage.getItem(contactStorage.key(i)));
-        let newContact = document.createElement("p");
-        let newContactText = document.createTextNode(contact.name);
-
+        let newContact = document.createElement("div");
+        let newContactMessage = document.createElement("p");
+        let messageNode = document.createTextNode(contact.name);
+        let imageElement = document.createElement("img");
         newContact.className += "contacts";
-        newContact.appendChild(newContactText);
+        imageElement.src = contact.avatar;
+
+        newContactMessage.appendChild(messageNode);
+        newContact.appendChild(newContactMessage);
+        newContact.appendChild(imageElement);
         contactsContainer.appendChild(newContact);
     }
 }

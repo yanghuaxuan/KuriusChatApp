@@ -8,6 +8,7 @@ I hate CSS
 - Allow user to send messages
 - Receive POST from user
 - Profile pics? (If I have time)
+- **Recent messages in contacts menu**
 
 ### A simple webserver is required to run this site
 1. Install node.js

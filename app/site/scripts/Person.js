@@ -1,7 +1,8 @@
 class metaData {
     constructor(author) {
-        this.timestamp = Date.now();
         this.author = author;
+        this.timestamp = Date.now();
+        this.avatar = ""
     }
 }
 export class Person {
@@ -18,5 +19,8 @@ export class Person {
         this.messages.push([message, 
                             JSON.stringify(new metaData("Recipient"))]);
         return this.messages;
+    }
+    addAvatar(link="./resources/defaultprofile.png") {
+        this.avatar = link;
     }
 }

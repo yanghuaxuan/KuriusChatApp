@@ -1,6 +1,6 @@
 let changeChatBox = function(contactName) {
     let contactStorage = window.localStorage;
-    let contact = JSON.parse(contactStorage.getItem(contactName));
+    let contact = JSON.parse(contactStorage.getItem(contactName.innerHTML));
     let contactMessages = contact.messages;
 
     let chatBox = document.getElementById("chat-box");
@@ -38,16 +38,17 @@ let changeChatBox = function(contactName) {
 }
 let changeChatHeader = function(contactName) {
     let chatHeader = document.getElementById("chat-header");
-    chatHeader.innerHTML = contactName;
+    chatHeader.innerHTML = contactName.innerHTML;
 }
 export let contactsMenuListener = function() {
-    let contactsMenu = document.getElementById("menu");
-    contactsMenu.onclick = function(event) {
+    let contactsMenu = document.getElementById("contacts-container");
+    contactsMenu.addEventListener('click', function(event) {
         let target = event.target;
-        if(target.className != "contacts") {
-            return;
+        if(target.nodeName != "DIV") {
+            target = event.target.parentElement;
         }
-        changeChatBox(target.innerHTML);
-        changeChatHeader(target.innerHTML)
-    }
+        console.log(target.nodeName);
+        changeChatBox(target.firstChild);
+        changeChatHeader(target.firstChild)
+    })
 }
