@@ -1,6 +1,6 @@
 ## Simple app I made for [HackItForward](https://hackitforward.com/challenge/20/#searchModalDialog) challenge  
 
-**View and run code [here](https://kuriuschatapp.3gigs.repl.co/)**
+**View webpage [here](https://kuriuschatapp.3gigs.repl.co/)**
 
 ### A simple webserver is required to run this site
 1. Install node.js
